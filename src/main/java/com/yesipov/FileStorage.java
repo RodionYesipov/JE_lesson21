@@ -84,7 +84,7 @@ public class FileStorage implements Storage {
         List<User> users = listFromFile(file);
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).equals(newUser)) {
-                users.set(i,newUser);
+                users.set(i, newUser);
             }
         }
         listToFile(users, file);

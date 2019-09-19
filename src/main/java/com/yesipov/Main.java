@@ -13,9 +13,9 @@ public class Main {
         FileStorage fileStorage = new FileStorage(file);
 
 
-        fileStorage.addUser(new User(11,"Rodion",26));
-        fileStorage.addUser(new User(23,"Alex",55));
-        fileStorage.addUser(new User(34,"Ben",19));
+        fileStorage.addUser(new User(11, "Rodion", 26));
+        fileStorage.addUser(new User(23, "Alex", 55));
+        fileStorage.addUser(new User(34, "Ben", 19));
 
         System.out.println("Primary list of users:");
         System.out.println(fileStorage);
@@ -43,9 +43,9 @@ public class Main {
         System.out.println(fileStorage);
 
         id = 34;
-        User user = new User(id,"Mike",41);
+        User user = new User(id, "Mike", 41);
         System.out.println("\n\n\nUpdate user id = " + fileStorage.getUser(id));
-        fileStorage.updateUser(fileStorage.getUser(id),user);
+        fileStorage.updateUser(fileStorage.getUser(id), user);
 
         System.out.println("List after update");
         System.out.println(fileStorage);
