@@ -44,8 +44,8 @@ public class Main {
 
         id = 34;
         User user = new User(id, "Mike", 41);
-        System.out.println("\n\n\nUpdate user id = " + fileStorage.getUser(id));
-        fileStorage.updateUser(fileStorage.getUser(id), user);
+        System.out.println("\n\n\nUpdate user id = " + fileStorage.getUser(id).getId());
+        fileStorage.updateUser(user);
 
         System.out.println("List after update");
         System.out.println(fileStorage);

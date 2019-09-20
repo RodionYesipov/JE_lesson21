@@ -80,11 +80,11 @@ public class FileStorage implements Storage {
     }
 
     @Override
-    public void updateUser(User user, User newUser) throws IOException {
+    public void updateUser(User user) throws IOException {
         List<User> users = listFromFile(file);
         for (int i = 0; i < users.size(); i++) {
-            if (users.get(i).equals(newUser)) {
-                users.set(i, newUser);
+            if (users.get(i).equals(user)) {
+                users.set(i, user);
             }
         }
         listToFile(users, file);

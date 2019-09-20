@@ -14,7 +14,7 @@ public interface Storage {
 
     void addUser(User user) throws IOException;
 
-    void updateUser(User user, User newUser) throws IOException;
+    void updateUser(User user) throws IOException;
 
     User getUser(int id) throws IOException;
 
